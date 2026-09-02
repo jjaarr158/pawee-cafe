@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลติดต่อ - Pawfe Cafe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;600;700&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Anuphan', 'Fredoka', sans-serif;
+            background-color: #FCF8F2;
+        }
+        .neo-box {
+            border: 4px solid #000000;
+            box-shadow: 6px 6px 0px 0px #000000;
+        }
+        .neo-btn {
+            border: 4px solid #000000;
+            box-shadow: 4px 4px 0px 0px #000000;
+            transition: all 0.2s ease;
+        }
+        .neo-btn:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 7px 7px 0px 0px #000000;
+        }
+    </style>
+</head>
+<body class="text-black">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-[#FFB5D8] border-b-4 border-black p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-2xl font-bold bg-[#FFD93D] px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_#000000]">
+                <span>🐾 PAWFE CAFE</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 font-bold">
+                <a href="index.html" class="px-3 py-1 hover:bg-[#FCF8F2] hover:border-2 hover:border-black transition-all">หน้าแรก</a>
+                <a href="services.html" class="px-3 py-1 hover:bg-[#FCF8F2] hover:border-2 hover:border-black transition-all">เมนู & บริการ</a>
+                <a href="work.html" class="px-3 py-1 hover:bg-[#FCF8F2] hover:border-2 hover:border-black transition-all">แก๊งขนฟู</a>
+                <a href="process.html" class="px-3 py-1 hover:bg-[#FCF8F2] hover:border-2 hover:border-black transition-all">วิธีจองคิว</a>
+                <a href="contact.html" class="bg-[#805A3B] text-[#FCF8F2] px-5 py-2 border-4 border-black shadow-[4px_4px_0px_0px_#000000]">ติดต่อเรา</a>
+            </div>
+            <button id="menu-btn" class="md:hidden p-2 border-4 border-black bg-[#FCF8F2] shadow-[3px_3px_0px_0px_#000000]">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 flex flex-col gap-3 bg-[#FCF8F2] border-4 border-black p-4 shadow-[4px_4px_0px_0px_#000000]">
+            <a href="index.html" class="block font-bold p-2 hover:bg-[#FFB5D8] transition-all">หน้าแรก</a>
+            <a href="services.html" class="block font-bold p-2 hover:bg-[#FFB5D8] transition-all">เมนู & บริการ</a>
+            <a href="work.html" class="block font-bold p-2 hover:bg-[#FFB5D8] transition-all">แก๊งขนฟู</a>
+            <a href="process.html" class="block font-bold p-2 hover:bg-[#FFB5D8] transition-all">วิธีจองคิว</a>
+            <a href="contact.html" class="block font-bold p-2 bg-[#805A3B] text-white text-center border-2 border-black">ติดต่อเรา</a>
+        </div>
+    </nav>
+
+    <!-- CONTENT BODY -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-center uppercase bg-[#FFD93D] inline-block px-6 py-3 border-4 border-black shadow-[5px_5px_0px_0px_#000000] mb-12 block mx-auto w-max transform -rotate-1">
+            พิกัด & ข้อมูลติดต่อ 📍
+        </h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <!-- Left Side: Contact Info & Opening Hours (7 cols) -->
+            <div class="lg:col-span-7 space-y-8">
+                <!-- Working hours Box -->
+                <div class="bg-[#FFB5D8] p-8 border-4 border-black shadow-[6px_6px_0px_0px_#000000]">
+                    <h2 class="text-3xl font-extrabold mb-4">⏰ เวลาทำการ (Paw-Hours)</h2>
+                    <ul class="text-lg font-bold space-y-2">
+                        <li class="flex justify-between border-b-2 border-black pb-1"><span>วันจันทร์ - วันศุกร์</span> <span class="bg-black text-[#FFD93D] px-2 py-0.5">09:00 - 20:00 น.</span></li>
+                        <li class="flex justify-between border-b-2 border-black pb-1"><span>วันเสาร์ - วันอาทิตย์</span> <span class="bg-black text-[#FFD93D] px-2 py-0.5">08:30 - 21:00 น.</span></li>
+                        <li class="text-stone-800 text-sm mt-2 font-medium">หมายเหตุ: เพื่อความเป็นระเบียบและให้สัตว์เลี้ยงได้พักผ่อนอย่างเต็มที่ ทางร้านเปิดให้บริการแบบจองคิวล่วงหน้าด้วยนะจ๊ะ</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Detail Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-[#FCF8F2] p-6 border-4 border-black shadow-[4px_4px_0px_0px_#000000]">
+                        <h3 class="text-xl font-extrabold mb-2">📞 เบอร์โทรศัพท์</h3>
+                        <p class="text-lg font-semibold text-stone-800">089-123-4567</p>
+                    </div>
+                    <div class="bg-[#FCF8F2] p-6 border-4 border-black shadow-[4px_4px_0px_0px_#000000]">
+                        <h3 class="text-xl font-extrabold mb-2">✉️ อีเมลติดต่อ</h3>
+                        <p class="text-lg font-semibold text-stone-800">hello@pawfecafe.com</p>
+                    </div>
+                </div>
+
+                <!-- Map Box -->
+                <div class="bg-[#E4C59E] p-4 border-4 border-black shadow-[6px_6px_0px_0px_#000000]">
+                    <h3 class="text-2xl font-black mb-2">🗺️ แผนที่ร้านของเรา</h3>
+                    <p class="font-bold text-stone-800 mb-4">ซอยแสนซน แขวงนุ่มนิ่ม เขตพญาไท กรุงเทพฯ 10400 (มีที่จอดรถหน้าร้านกว้างขวาง)</p>
+                    <!-- Google Map Placeholder Styled Box -->
+                    <div class="w-full h-64 bg-stone-300 border-4 border-black flex items-center justify-center relative overflow-hidden">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="Map mockup">
+                        <span class="absolute bg-black text-white px-4 py-2 font-black border-2 border-white">📌 ดูบน GOOGLE MAPS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Message form (5 cols) -->
+            <div class="lg:col-span-5 bg-white p-8 border-4 border-black shadow-[8px_8px_0px_0px_#000000]">
+                <h2 class="text-3xl font-extrabold mb-6 border-b-4 border-black pb-4">💬 ส่งข้อความหาเรา</h2>
+                <form id="message-form" class="space-y-4">
+                    <div>
+                        <label class="block text-md font-bold mb-1" for="contact-name">ชื่อของคุณ</label>
+                        <input type="text" id="contact-name" required class="w-full p-2.5 border-4 border-black font-semibold focus:outline-none focus:bg-[#FFB5D8]" placeholder="คุณเจ๋งมาก">
+                    </div>
+                    <div>
+                        <label class="block text-md font-bold mb-1" for="contact-email">อีเมลติดต่อ</label>
+                        <input type="email" id="contact-email" required class="w-full p-2.5 border-4 border-black font-semibold focus:outline-none focus:bg-[#FFB5D8]" placeholder="test@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-md font-bold mb-1" for="message">ข้อความที่ต้องการฝากไว้</label>
+                        <textarea id="message" rows="4" required class="w-full p-2.5 border-4 border-black font-semibold focus:outline-none focus:bg-[#FFB5D8]" placeholder="สวัสดีแก๊งขนฟู..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full neo-btn bg-black text-[#FFD93D] py-3 text-lg font-bold">
+                        ส่งข้อความทันที ✨
+                    </button>
+                </form>
+                <div id="contact-success" class="hidden mt-4 bg-[#FFB5D8] p-3 border-4 border-black font-bold text-center text-sm">
+                    🚀 ขอบคุณสำหรับข้อความ! เราจะตอบกลับทางอีเมลโดยเร็วที่สุด
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-8 border-t-4 border-black">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-bold">© 2026 PAWFE CAFE. ALL RIGHTS RESERVED. 🐾</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:underline">Facebook</a>
+                <a href="#" class="hover:underline">Instagram</a>
+                <a href="#" class="hover:underline">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Contact Form
+        const form = document.getElementById('message-form');
+        const success = document.getElementById('contact-success');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            success.classList.remove('hidden');
+            form.reset();
+        });
+    </script>
+</body>
+</html>
